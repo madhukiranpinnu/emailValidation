@@ -3,7 +3,7 @@
 echo "welcome to email validtion program"
 
 read -p "enter email please: " email 
-pattern="^[A-Za-z0-9]+.[a-zA-Z]{2,4}"
+pattern="^([A-Za-z0-9]+)?@[a-zA-Z]+"
 
 if [[ $email =~ $pattern ]]
 then
